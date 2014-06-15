@@ -12,7 +12,7 @@ improvements.
 It supports now an advanced feature called 'parameterized logging', which can 
 significantly boost logging performance for disabled logging statement. If the 
 current log level is lower than the global log level, log message will not be 
-concatenated.
+concatenated.                                                 
 
-  BEFORE: LOG.Debug(Format('Invalid value %s' [Value]));
-  NOW:    LOG.Debug('Invalid value %s', [Value]);
+ * Using original Log4D: <code>LOG.Debug(Format('Invalid value %s' [Value]));</code>
+ * Now: <code>LOG.Debug('Invalid value %s', [Value]);</code>
